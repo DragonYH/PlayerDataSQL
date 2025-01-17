@@ -57,5 +57,5 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         files: target/*.jar
-        tag_name: ${{ steps.pom-version.outputs.version }}
+        tag_name: ${{ steps.extract.outputs.version }}
 
