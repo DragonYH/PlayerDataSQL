@@ -53,12 +53,12 @@ jobs:
     - name: Update artifacts
       uses: actions/upload-artifact@v4
       with:
-        path: target/*.jar
+        path: target/${{ steps.extract.outputs.name }}_${{ steps.extract.outputs.version }}.jar
         name: PlayerDataSQL
 
     - name: Release
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: ${{ steps.extract.outputs.version }}
+        tag_name: V${{ steps.extract.outputs.version }}
         files: target/*.jar
 
