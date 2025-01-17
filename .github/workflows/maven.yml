@@ -60,5 +60,5 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: V${{ steps.extract.outputs.version }}
-        files: target/${{ steps.extract.outputs.name }}_${{ steps.extract.outputs.version }}.jar
+        files: target/${{ steps.extract.outputs.name }}_v${{ steps.extract.outputs.version }}.jar
 
