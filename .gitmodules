@@ -1,12 +1,12 @@
 [submodule "libs/Bukkit-Commons-PluginBase"]
 	path = libs/Bukkit-Commons-PluginBase
-	url = https://github.com/DragonYH/Bukkit-Commons-PluginBase
+	url = https://github.com/DragonYH/Bukkit-Commons-PluginBase.git
 [submodule "libs/Bukkit-Commons-NMSUtil"]
 	path = libs/Bukkit-Commons-NMSUtil
-	url = https://github.com/DragonYH/Bukkit-Commons-NMSUtil
+	url = https://github.com/DragonYH/Bukkit-Commons-NMSUtil.git
 [submodule "libs/Java-Commons-Util"]
 	path = libs/Java-Commons-Util
-	url = https://github.com/DragonYH/Java-Commons-Util
+	url = https://github.com/DragonYH/Java-Commons-Util.git
 [submodule "libs/Java-Commons-CommentedYaml"]
 	path = libs/Java-Commons-CommentedYaml
-	url = https://github.com/DragonYH/Java-Commons-CommentedYaml
+	url = https://github.com/DragonYH/Java-Commons-CommentedYaml.git
