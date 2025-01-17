@@ -34,12 +34,17 @@ jobs:
         bash setup.sh
         mvn -B package --file pom.xml
 
-    - name: get-pom-version
-      uses: PERES-Richard/maven-get-version-action@v3.0.0
-      id: pom-version
+    - name: Extract GAV
+      id: extract
+      uses: andreacomo/maven-gav-extractor@v2
 
-    - name: Print Maven POM project version
-      run: echo "version = ${{ steps.pom-version.outputs.version }}"
+    - name: Log GAV
+      run: |
+        echo ${{ steps.extract.outputs.group-id }}
+        echo ${{ steps.extract.outputs.artifact-id }}
+        echo ${{ steps.extract.outputs.version }}
+        echo ${{ steps.extract.outputs.name }}
+      shell: bash
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update artifacts
